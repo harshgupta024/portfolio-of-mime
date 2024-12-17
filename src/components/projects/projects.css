@@ -1,0 +1,87 @@
+.portfolio {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.section__title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+.project__filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project__item {
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.project__item:hover,
+.active-project {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.project__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project__card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project__card:hover {
+    transform: scale(1.05);
+}
+
+.project__img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project__button:hover {
+    color: #0056b3;
+}

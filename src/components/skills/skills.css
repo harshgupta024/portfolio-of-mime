@@ -1,0 +1,97 @@
+.skills__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for the overall container */
+    column-gap: 3rem;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.skills__content {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+    box-sizing: border-box;
+}
+
+.skills__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+}
+
+.skills__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns inside each box */
+    gap: 2.5rem;
+    /* Gap between the items inside the box */
+    justify-content: center;
+}
+
+.skills__group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.skills__data {
+    display: flex;
+    column-gap: 0.5rem;
+    align-items: center;
+}
+
+.skills svg {
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.skills__level {
+    font-size: var(--smaller-font-size);
+}
+
+/* BREAK POINTS */
+@media screen and (max-width: 992px) {
+    .skills__container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on medium screens */
+        row-gap: 2rem;
+    }
+
+    .skills__box {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns inside the box for medium screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .skills__content {
+        padding: 1.5rem;
+        /* Reduce padding on very small screens */
+    }
+
+    .skills__box {
+        grid-template-columns: 1fr;
+        /* Single column inside the box for smaller screens */
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .skills__box {
+        column-gap: 1rem;
+    }
+
+    .skills__name {
+        font-size: var(--small-font-size);
+        /* Adjust font size for small screens */
+    }
+}
